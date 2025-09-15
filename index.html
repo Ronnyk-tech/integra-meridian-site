@@ -5,10 +5,62 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Integra Meridian Corp — Shipping & Orders</title>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:0; color:#111 }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:0; color:#111; background:#fff; }
     .container{ max-width:900px; margin:40px auto; padding:24px; }
     header{ display:flex; gap:16px; align-items:center; }
-    .logo{ width:72px; height:72px; background:#eee; display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:700; color:#666;}
-    h1{ margin:0; font-size:22px; }
-    p.lead{ color:#444; margin-top:8px; }
-    .card{ border:1px solid #eee; padding:16px; bo
+    .logo{ width:72px; height:72px; background:#eee; display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:700; color:#666; }
+    h1{ margin:0; font-size:26px; }
+    p.lead{ color:#444; margin-top:8px; font-size:16px; }
+    .card{ border:1px solid #eee; padding:16px; border-radius:8px; margin-top:18px; background:#fafafa; }
+    .field{ margin-bottom:8px; }
+    footer{ margin-top:28px; color:#666; font-size:14px; border-top:1px solid #eee; padding-top:12px; }
+    .btn{ display:inline-block; padding:10px 14px; border-radius:6px; text-decoration:none; background:#0070f3; color:white; margin-top:12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">LOGO</div>
+      <div>
+        <h1>Integra Meridian Corp</h1>
+        <div style="color:#666; font-size:14px;">In-house shipping integration</div>
+      </div>
+    </header>
+
+    <p class="lead">
+      We provide shipping and order fulfillment services. This page is a public business landing page to verify our operations for USPS API access.
+    </p>
+
+    <div class="card">
+      <h3>About</h3>
+      <p>
+        Integra Meridian Corp is building an in-house shipping integration to generate labels, rates, and tracking for our customer orders.
+        We are not using ShipStation or other reseller services; this is a custom integration.
+      </p>
+
+      <h3>Contact</h3>
+      <p class="field"><strong>Email:</strong> <a href="mailto:info@integrameridian.example">info@integrameridian.example</a></p>
+      <p class="field"><strong>Phone:</strong> 407-271-7973</p>
+
+      <h3>Business Address</h3>
+      <p>14815 Tullamore Loop, Winter Garden, Florida 74787</p>
+
+      <h3>What we will use USPS APIs for</h3>
+      <ul>
+        <li>Generate domestic and international shipping labels</li>
+        <li>Retrieve shipping rates and delivery estimates</li>
+        <li>Provide tracking to customers</li>
+      </ul>
+
+      <p>If you need more details or screenshots of our dev environment, please contact us at the email above.</p>
+    </div>
+
+    <a class="btn" href="mailto:info@integrameridian.example?subject=USPS%20API%20Query">Contact Us</a>
+
+    <footer>
+      <div>Business Address: 14815 Tullamore Loop, Winter Garden, Florida 74787</div>
+      <div style="margin-top:8px;">This is a simple static page hosted on GitHub Pages for verification purposes.</div>
+    </footer>
+  </div>
+</body>
+</html>
